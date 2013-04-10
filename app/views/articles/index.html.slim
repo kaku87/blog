@@ -1,0 +1,12 @@
+h1 kaku's blog
+
+table
+- @articles.each do |article|
+  tr
+    a href=article_path(article.id) = article.title
+  br
+  tr
+    td.content = article.content
+  br
+
+= link_to 'new', new_article_path

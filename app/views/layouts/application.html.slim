@@ -1,0 +1,15 @@
+doctype html
+html
+head
+  title kaku's Blog
+  = stylesheet_link_tag    "app", "articles"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+body
+  body
+	  div id="globalheader-container"
+	      iframe id="globalheader" height="37" frameborder="0" 
+	  div id="container"
+ 	    div id="container-inner"
+          div id="blog-title-inner"
+            = yield
