@@ -16,6 +16,8 @@ gem 'slim', '~> 1.1.0'
 gem 'slim-rails'
 gem 'anjlab-bootstrap-rails', '>= 2.1', :require => 'bootstrap-rails'
 gem 'activeadmin'
+gem 'gravtastic'
+gem 'twitterfeed'
 
 # Gems used only for assets and not required
 # in production environments by default.

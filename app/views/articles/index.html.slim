@@ -1,12 +1,9 @@
-h1 kaku's blog
-
-table
 - @articles.each do |article|
-  tr
-    a href=article_path(article.id) = article.title
-  br
-  tr
-    td.content = article.content
-  br
+  p style="border-bottom: 1px solid #ddd"
+    strong
+      a href=article_path(article.id) = article.title
 
-= link_to 'new', new_article_path
+  p
+    = article.content
+
+= paginate @articles, :window => 2, :outer_window => 2
