@@ -4,6 +4,6 @@
       a href=article_path(article.id) = article.title
 
   p
-    = article.content
+    = markdown(article.content)
 
 = paginate @articles, :window => 2, :outer_window => 2

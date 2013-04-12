@@ -127,6 +127,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    redcarpet (1.17.2)
     responders (0.9.3)
       railties (~> 3.1)
     sass (3.2.7)
@@ -180,6 +181,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   rails (= 3.2.11)
+  redcarpet (= 1.17.2)
   sass-rails (~> 3.2.3)
   slim (~> 1.1.0)
   slim-rails
