@@ -3,7 +3,7 @@ Blog::Application.routes.draw do
   ActiveAdmin.routes(self)
   root :to => 'article#index'
   resources :articles
-
+  get 'tags/:tag', to: 'articles#index', as: :tag
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

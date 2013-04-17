@@ -1,9 +1,12 @@
 - @articles.each do |article|
-  p style="border-bottom: 1px solid #ddd"
+  
+  p style="border-bottom: 1px solid #ddd;font-size:20px"
     strong
       a href=article_path(article.id) = article.title
-
+  p 
+	|tags : 
+	= raw article.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') 
   p
     = markdown(article.content)
-
+    
 = paginate @articles, :window => 2, :outer_window => 2

@@ -19,6 +19,7 @@ gem 'activeadmin'
 gem 'gravtastic'
 gem 'twitterfeed'
 gem 'redcarpet', '1.17.2'
+gem 'acts-as-taggable-on'
 
 # Gems used only for assets and not required
 # in production environments by default.

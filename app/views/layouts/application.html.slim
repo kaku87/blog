@@ -21,7 +21,8 @@ body
     div id="sidebar"
       ul class="thumbnails"
         li class="span2"
-          div class="thumbnail"
-            
+          div id="tag_cloud" class="thumbnail"
+            - tag_cloud Article.tag_counts, %w[s m l] do |tag, css_class|
+              = link_to tag.name, tag_path(tag.name), class: css_class
         li class="span2"
           div class="thumbnail"
