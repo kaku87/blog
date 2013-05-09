@@ -16,8 +16,8 @@ class Article < ActiveRecord::Base
   end
 
   def self.tag_counts
-    Tag.select("tags.*, count(taggings.tag_id) as count").
-      joins(:taggings).group("taggings.tag_id")
+    Tag.select("tags.id, count(taggings.tag_id) as count").
+      joins(:taggings).group("taggings.tag_id,tags.id")
   end
 
   def tag_list
